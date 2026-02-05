@@ -187,3 +187,44 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+/* your existing CSS */
+/* your existing CSS */
+/* your existing CSS */
+
+/* ========================= */
+/* INTERACTIVE ADDITIONS */
+/* ========================= */
+
+.glow-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(
+        circle,
+        rgba(56,189,248,0.25),
+        transparent 65%
+    );
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 3D cards */
+.project {
+    transform-style: preserve-3d;
+}
+
